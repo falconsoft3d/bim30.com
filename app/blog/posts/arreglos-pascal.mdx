@@ -1,0 +1,30 @@
+---
+title: 'Arreglos en Pascal'
+publishedAt: '2024-11-03'
+summary: 'Arreglos en Pascal'
+---
+
+Aqui le mostramos como se trabajan los arreglos en Pascal.
+
+```pascal
+program ArrayExample;
+
+var
+  arr: array[1..5] of Integer;
+  i: Integer;
+
+begin
+  { Asignamos valores al arreglo }
+  arr[1] := 10;
+  arr[2] := 20;
+  arr[3] := 30;
+  arr[4] := 40;
+  arr[5] := 50;
+
+  { Recorremos el arreglo e imprimimos cada elemento }
+  for i := 1 to 5 do
+  begin
+    writeln('Elemento ', i, ': ', arr[i]);
+  end;
+end.
+```

@@ -1,0 +1,46 @@
+---
+title: 'Programación Orientada a Objetos en Pascal'
+publishedAt: '2024-11-03'
+summary: 'Programación Orientada a Objetos en Pascal'
+---
+
+Ahora veremos como trabajar con Programación Orientada a Objetos en Pascal.
+    
+```pascal
+program ClasePersona;
+
+type
+  TPersona = class
+  private
+    Nombre: String;
+    Edad: Integer;
+  public
+    constructor Create(aNombre: String; aEdad: Integer);
+    procedure MostrarInfo;
+  end;
+
+{ Implementación de los métodos de la clase }
+
+constructor TPersona.Create(aNombre: String; aEdad: Integer);
+begin
+  Nombre := aNombre;
+  Edad := aEdad;
+end;
+
+procedure TPersona.MostrarInfo;
+begin
+  writeln('Nombre: ', Nombre);
+  writeln('Edad: ', Edad);
+end;
+
+{ Programa principal }
+
+var
+  persona: TPersona;
+
+begin
+  persona := TPersona.Create('Juan', 30);
+  persona.MostrarInfo;
+  persona.Free;  { Liberamos la memoria }
+end.
+```
