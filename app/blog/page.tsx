@@ -1,8 +1,8 @@
 import { BlogPosts } from 'app/components/posts'
 
 export const metadata = {
-  title: 'Blog',
-  description: 'Read my blog.',
+  title: 'BIM30',
+  description: 'ERP para Windows y Mac.',
 }
 
 export default function Page() {
